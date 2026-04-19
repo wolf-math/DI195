@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body> 
+    <p>
+        <a id="dI" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://google.com/">Google</a>
+    </p> 
+
+    <script>
+      // Write variables to get the value of the attributes of the specified link :
+      const anchor = document.getElementById('dI')
+
+      // href
+
+      const aHref = anchor.href
+
+      // hreflang
+
+      const aHreflang = anchor.hreflang
+        // rel
+
+      const aRel = anchor.rel
+        // target
+
+      const aTarget = anchor.target
+        // type
+
+      const aType = anchor.type
+
+      console.log(aHref, aHreflang, aRel, aTarget, aType)
+
+
+    </script>
+</body>
+
+</html>
