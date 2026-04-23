@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Times</title>
+</head>
+<body>
+  
+
+  <script>
+    function sayHi(){
+      console.log('hi')
+    }
+
+    function sayBye(id){
+      clearInterval(id)
+      console.log('bye')
+    }
+
+    const myId = setInterval(sayHi, 3000)
+
+    setTimeout(sayBye, 30000, myId)
+
+  </script>
+</body>
+</html>

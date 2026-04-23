@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="jsstyle">Style</button> 
+
+  <script>
+    const button = document.getElementById('jsstyle')
+
+    button.addEventListener('click', changeColor)
+    button.addEventListener('mouseout', changeBack)
+
+    function changeColor(){
+      button.style.backgroundColor = 'green'
+      button.style.color = 'red'
+    }
+
+    function changeBack(){
+      button.style = 'none'
+    }
+
+
+  </script>
+</body>
+</html>

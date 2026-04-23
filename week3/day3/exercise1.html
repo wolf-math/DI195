@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="button" onclick="insertRow()" value="Insert row">  
+
+  <table id="sampleTable" border="1"> 
+    <tr>
+        <td>Row1 cell1</td> 
+        <td>Row1 cell2</td>
+    </tr> 
+    <tr>
+        <td>Row2 cell1</td> 
+        <td>Row2 cell2</td>
+    </tr> 
+    </table>
+
+  <script>
+    let count = 3
+    // get the table
+    const table = document.getElementById('sampleTable')
+
+    function insertRow() {
+      // create a new row
+      const newRow = document.createElement('tr')
+      // create new cells
+      const cell1 = document.createElement('td')
+      const cell2 = document.createElement('td')
+
+      // add cell table text
+      cell1.innerText = `Row${count} Cell1`
+      cell2.innerText = `Row${count} Cell2`
+
+      // add cell to the row
+      newRow.appendChild(cell1)
+      newRow.appendChild(cell2)
+
+      // add the row to the table
+      table.appendChild(newRow)
+
+      // increase the count by 1
+      count++
+    }
+  </script>
+
+</body>
+</html>

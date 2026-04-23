@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    const sandwich = 'Chicken'
+
+    const food = {
+      sandwich: 'cheese',
+      snack: 'pudding',
+      eat: function() {
+        console.log(`I like to eat ${this.sandwich}`)
+      }
+    }
+
+    const food2 = {
+      sandwich: 'hamburger',
+      snack: 'candy',
+      eat: function() {
+        console.log(`I like to eat ${sandwich}`)
+      }
+    }
+
+    console.log(sandwich) // Chicken
+    food.eat() // I like to eat cheese
+    console.log(food2.sandwich) // hamburger
+    food2.eat() // I like to eat Chicken
+
+  </script>
+  
+</body>
+</html>
