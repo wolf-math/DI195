@@ -1,0 +1,18 @@
+# XML
+
+<url>
+  <loc>https://wolfcodes.dev/blog</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.5</priority>
+</url>
+
+
+#JSON
+
+{
+  url: {
+    "loc": "https://wolfcodes.dev/blog",
+    "changefreq": "weekly",
+    "priority": 0.5
+  }
+}

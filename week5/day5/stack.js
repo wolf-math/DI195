@@ -13,3 +13,7 @@ function func3() {
 }
 
 func1();
+// order
+// 1. func3
+// 2. func2
+// 3. func1
