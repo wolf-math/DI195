@@ -1,6 +1,9 @@
 const joke = document.getElementById('joke');
 
+const loading = document.getElementById('loading');
+
 function getJoke() {
+  loading.style.visibility = 'visible';
   fetch('https://api.chucknorris.io/jokes/random?category=dev')
     .then((response) => {
       if (response.ok) {
@@ -10,6 +13,7 @@ function getJoke() {
       }
     })
     .then((data) => {
+      loading.style.visibility = 'hidden';
       joke.innerText = data.value;
     })
     .catch((error) => console.log(error));
