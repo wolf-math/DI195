@@ -2,7 +2,7 @@ function fetchApi(url) {
   return fetch(url).then((res) => res.json());
 }
 
-const apiKey = 'e82251deb1644f092281f508884933dd'; // super secret.
+const apiKey = 'e82251deb1644f092281f508884933dd'; // deactivated.
 
 const city = prompt('What city do want to the weather for?');
 // const city = 'London';

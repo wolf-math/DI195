@@ -1,7 +1,7 @@
 import requests
 import pprint
 
-api_key = "e82251deb1644f092281f508884933dd" # super secret. don't share!
+api_key = "e82251deb1644f092281f508884933dd" # deactivated!
 
 city_search = input("For what city do you want to know the weather? ")
 print()
